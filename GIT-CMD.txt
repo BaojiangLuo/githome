@@ -1,0 +1,43 @@
+git init   		//初始化本地git仓库
+git add <文件>  //添加文件
+git status		//查看状态
+git commit		//提交
+git push		//推送到仓库
+git pull		//从远程仓库拉取数据
+git clone		//从远程仓库拷贝数据
+
+
+
+
+git init 
+git config --global user.name 'name'
+git config --global user.email '123@qq.com'
+
+git add . 			 	   //添加当前目录所有文件
+git add *.html				//添加 .html 后缀名的文件
+git rm --cached filename> //删除filename文件 
+
+git commit                //提交文件
+git commit -m "init my project" //提交文件并提示信息
+
+创建 .gitignore 文件  配置忽略文件
+
+//.gitignore 文件
+node_modules
+.idea
+.vscode
+.git
+
+创建分支(git branch name)
+git branch login
+
+//查看主线(固定写法)
+git checkout master
+//合并分支(主线状态下)
+git merge login
+
+//查看分支
+git checkout login
+
+//克隆 
+git clone http://???
